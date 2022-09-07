@@ -1,0 +1,61 @@
+css 만들 때 제일 중요한 것 크게->작게
+html 문서에 div 부터 작성하기(큰 덩어리 만드는 작업)
+div = selector = 선택자
+width 값을 지정해주지 않아도 화면에 나타나는 이유는 디폴트로 auto를 지정하기 때문. 
+이런 걸 initial value라고 한다
+width: auto; -> width property의 auto value 다
+width: auto와 width: 100%는 부모가 제공해주는 컨텐츠 영역 너비만큼 가득 차는 건 똑같은데
+마진 또는 패딩의 너비를 브라우저가 알아서 계산해주느냐, 안해주느냐의 차이인거다.
+(왼쪽에 써진) property가 다르면 오른쪽에 auto라고 똑같이 써도 다른 값이 나온다
+padding auto는 없대
+
+콘텐츠가 있을 때 div 요소는 어떻게 너비를 가질 수 있을까?
+width 속성의 초깃값이 auto이기 때문에 최대너비를 가질 수 있다. 
+width: auto의 의미는?
+브라우저가 계산한 즉, margin, padding, border 등을 고려하여 유연하게 부모가 제공하는 최대 콘텐츠 영역 너비만큼 가득찬다.
+100프로와 차이는?
+부모가 제공하는 콘텐츠 영역 최대너비만큼 가득차지만 이는 단순히 계산된 픽셀값이다.
+따라서 margin이나 padding, border 값을 지정해주면 부모 요소를 벗어나버릴 수가 있다.
+width: initial -> width를 초기화했다는 의미로 auto 값을 가진다
+height: auto의 의미는
+자신이 가지는 콘텐츠 높이만큼 유연하게 가진다
+즉, width: auto와는 다르게 자식이 기준이 된다
+
+padding: 안쪽 여백
+box-sizing은 content-box가 기본값
+width, height가 고정이 된 상태에 padding의 값이 생기면 전체크기가 커진다
+width: 200px
+height: 200px 일떄 
+padding: 50px가 되면 위 아래 옆쪽 다 50씩 커져서 전체 크기가 커지는것
+
+이 상태에서 html에 div 두개를 쓰면 가로로 2개 생기는게 아니라 위아래로 생긴다 왜?/
+블록 레벨 엘리먼트 이기 때문에= 전체 땅을 빌렸다
+
+ margin의 기본값은 0
+margin-left에 auto를 넣으면 전체가 오른쪽으로 간다(왼쪽을 여백으로 갖겠다)
+이 상태에서 margin-right에 auto를 넣으면(오른쪽을 여백으로 갖겠다) 전체가 가운데정렬이 된다
+margin-left+margin-right: auto = margin: 0 auto 
+margin auto 값은 무조건 0으로 계산된다
+
+div class 값을 지정할 때 맨 처음에 숫자가 나오면 안된다(뒤에 쓸 수는 있다.)
+html에서 div class="header"라고 쓰면 css에서는 div.header
+div class에 아무런 의미 없는 단어를 쓰는 건 비추
+
+css에 .header라고만 쓰면 *(유니버셜 셀렉터)가 생략되어 있는 것(=전체 생략)
+      div.header = div에 있는 header만 선택
+      h1.header = h1에 있는 header만 선택
+ 
+text-aline: center;  인라인 요소 가운데 정렬(텍스트가 가운데 정렬)
+margin: 0 auto;       블럭요소 가운데 정렬 
+
+block level elements : div, ul, li, h1-h6, p 등 대부분의 요소
+lnline elements: 안에 있는 text, image, contents 등등      
+text-align: center 같은 건 상위요소인 block level elements한테 주는 거지 img같은 inline 에 줘봤자 소용업다
+가로 가운데 정렬 : div { margin: 0 auto; } -> 가득차있는 상태이기 때문에 가운데 정렬이 안된다
+                        div{ width: 숫자px; margin-left: 0 auo
+
+fit-content - 텍스트 크기만큼 길이가 결정 
+
+display: 인라인을 블록화하거나 블록을 인라인화시키는것
+
+display : inline-block -> inline에 써져있는 텍스트나 이미지 줄에 맞춰 블록화하는 것

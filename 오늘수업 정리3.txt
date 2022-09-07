@@ -1,0 +1,97 @@
+인프런 
+진유림 팀개발을 위한 git,github 입문
+얄팍한코딩사전 github
+
+github로 협업하는 방법
+git pull 내 컴퓨터에 받아오는 것
+
+git clone - 해당되는 레파지토리에 깃헙 주소 복사- $ get clone 해당주소- 한칸 띄우고 점 붙이기
+
+$ git add . 
+$ git comit 
+
+git clone 레포지토리url . (맨처음에만 사용)
+수정
+git pull 
+내용 수정 
+git add .
+git commit -m '커밋메세지'
+git push
+
+GUI
+-Graphic User Interface
+-마우스로 클릭할수 있는 환경
+
+CLI-
+-Command Line Interface
+-회사서버의 90%이상은 리눅스 환경. 
+-FE개발자들은 유저(개념) 보다는 개발자이기에 터미널과 같이 백지로 작업할 경우가 많다.
+-은행회사일 경우 VSC사용못할 경우도 많다. 구글링도 개인적으로 해야 할 경우도 많음
+-명령어로만 작업
+
+터미널
+gitbash
+$ touch 부르고 싶은 html 문서들 -> 지웠던 문서들이 다시 생성됨
+$ mkdir 단어 - 단어로 써진 폴더 생성됨
+$ git --version -> git 버전이 몇인지 알 수 있음
+$ cd .. -> 상위 폴더로 이동
+$ rmdir 비어있는 디렉토리 삭제
+$ git init 비어있는 숨김폴더 생성
+$ ls -al 모든 파일 보기
+$ git config --global user.name "jihye.kwon"
+$ git config --global user.email kwonjhjyj@naver.com
+$ git config --list
+$ touch README.md -> readme 파일 생성
+svn 사용하는 곳은 탈출하자..!
+
+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
+
+<오늘 기억해야할 것>
+git clone 레퍼지토리 주소 .
+파일 수정이나 추가
+git add .
+git commit -m 'hello1'
+git push
+
+git pull(혼자 작업할 때는 git pull 빼도 됨)
+파일 수정이나 추가
+git add .
+git commit -m 'hello3'
+git push
+
+----파일 수정된 것은 깃헙에서 확인
+
+git branch -M main -> master를 main 으로 바꾸는 것
+git remote add origin https://github.com/jhfrontend
+
+0. 기획자가 기획
+
+1. URL 구조 작성
+
+/about
+
+/index.html
+
+/a/index.html
+
+/b/index.html
+
+/c/index.html
+
+2. model 설계
+
+게시판
+
+  - 게시물 제목
+
+  - 게시물 내용
+
+  - 사진
+
+  ...
+
+3. 디자이너가 디자인
+
+4. templates 작성(HTML 파일)
+
+5. model 설계한 것과 templates 연동

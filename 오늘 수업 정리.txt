@@ -1,0 +1,85 @@
+ctrl+alt+방향키 = 원하는 곳 만큼 수정 가능
+strong= 강조
+h1.one+tab= class로 들어감
+h1#one+tab=id로 들어감
+h1#one.two.three.four+tab=one은 id, 나머지는 class로 들어감
+h$*6=h1~h6
+h${hello}*6=h1{hello}~h6{hello}
+div.container-$*3.row-$*6=<div class="container-1 row-1"></div>
+   			<div class="container-2 row-2"></div>
+  			 <div class="container-3 row-3"></div>
+   			<div class="container-4 row-4"></div>
+   			<div class="container-5 row-5"></div>
+   			<div class="container-6 row-6"></div>    
+    lorem=의미없는 텍스트 모음
+   lorem5=로렘 단어 갯수 5개
+  lorem*5=로렘 문단 갯수 5개
+img+tab=이미지 태그
+img:z=사이즈까지 조절 가능
+a+tab=사이트
+table>(tr>td{hello}*10)*5=table>tr*5>td*10=<table>
+        <tr>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+        </tr>
+        <tr>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+        </tr>
+        <tr>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+        </tr>
+        <tr>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+        </tr>
+        <tr>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+        </tr>
+    </table>
+  </table>
+
+ctrl+스페이스바= 미리보기
+

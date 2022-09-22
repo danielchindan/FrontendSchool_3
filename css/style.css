@@ -1,0 +1,187 @@
+@import url("./reset.css");
+@import url("./10000hours.css");
+
+*{
+    box-sizing: border-box;
+    font-family: "GmarketSansMedium";
+    color: inherit;
+    text-decoration: none;
+}
+
+.blind {
+    display: none;
+}
+
+body{
+    background-color: #5b2386;
+  }
+
+#app   {
+    width: 960px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+/* main */
+
+
+.tit-timelaw::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 20%;
+    left: 40%;
+    z-index: -1;
+    width: 221.6px;
+    height: 225px;
+    background-image: url(./img/clock.png);
+    height: 225px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-txt{
+align-items: center;
+display: block;
+position: absolute;
+max-width: 486px;
+left: 717px;
+top: 510px;
+}
+
+.txt-wannabe, .txt-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 0;
+}
+
+.txt-wannabe {
+    margin-bottom: 17px;
+}
+
+.buttons {
+display: flex;
+flex-direction: row;
+justify-content: center;
+padding: 21px 49px;
+gap: 10px;
+}
+
+.btn-go {
+    
+background-color: #FCEE21;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+border-radius: 56px;
+position: absolute;
+width: 356px;
+height: 66px;
+left: 678px;
+top: 1572px;
+}
+
+.btn-share{
+    margin-left: 18px;
+    background-color: #fff;
+}
+
+/*footer*/
+#footer{
+padding: 0 0 70px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+#footer .logo {
+width: 125px;
+height: 25px;
+margin-bottom: 20px;
+}
+
+#footer .txt-footer{
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFF;}
+    
+
+
+
+
+
+/*modal*/
+#modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    margin: 100px auto;
+    width: 800px;
+    height: 800px;
+    z-index: 19;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+
+}
+
+
+#modal .modal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    
+
+}
+
+
+
+#modal .txt-cheering{
+    font-family: 'OTEnjoystoriesBA';
+    color: #5b2386;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 29px;
+}
+
+#modal .txt-cheering strong {
+    font-weight: 700px;
+    font-size: 96px;
+    line-height: 106px;
+}
+
+#modal .licat-img{
+    width: 433px;
+    height: 337px;
+    margin-bottom: 20px;
+}
+
+  #modal .btn-go{
+    margin: 74px 0 20px;
+    font-size: 24px;
+    text-align: center;
+    background-color: #f5df4d;
+    color: #5B2386;
+    font-family: 'GmarketSansBold';
+    border-radius: 56px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 21px 49px;
+    gap: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border: none;
+
+    
+}
